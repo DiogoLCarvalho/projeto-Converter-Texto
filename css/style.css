@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-:root{
-    --colorOne:#F4F1F2;
-    --colorTwo:#7E3C55;
-    --colorThree:#161618;
+:root {
+    --colorOne: #F4F1F2;
+    --colorTwo: #7E3C55;
+    --colorThree: #161618;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--colorOne);
 }
-ul{
+
+ul {
     list-style: none;
 }
-#header{
+
+#header {
     width: 100%;
     padding: 10px;
     display: flex;
@@ -29,49 +31,86 @@ ul{
     color: var(--colorOne);
 }
 
-#header__nav{
+#header__nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ul__item{
+
+.ul__item {
     display: inline-block;
     margin-left: 10px;
 }
-.ul__item>a{
+
+.ul__item>a {
     font-size: 2rem;
 }
-.ul__item>a>img:hover{
+
+.ul__item>a>img:hover {
     filter: drop-shadow(2px 4px 6px black);
 }
-#nav__ul{
+
+#nav__ul {
     margin-top: 10px;
 }
 
+main {
+    background-color: rosybrown;
+    max-height: 85vh;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 30px;
+}
+
+#input__text {
+    resize: vertical;
+    outline: none;
+    border: none;
+    width: 50vw;
+    max-height: 800px;
+    min-height: 300px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.13rem;
+}
+
+#input__text:focus {
+    border: 2px solid var(--colorTwo);
+}
+#main__bnts{
+    margin-top: 20px;
+}
+.btn {
+    background-color: var(--colorThree);
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
+.btn:hover {
+    animation: flip-button 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both; 
+    background-color: white;
+    color: var(--colorThree);
+}
 
+@keyframes flip-button{
+    0% {
+        transform: rotateX(0);
+    }
+    50%{
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
 
-
-
-
-
-
-
-/*
-1°
-#161618
-#F4F1F2
-#7E3C55
-
-2°
-#2D3036
-#FED232
-#FFFFFF
-
-3°
-#151515
-#FFFFFF
-#D9E75C
-
-*/
