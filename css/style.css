@@ -54,6 +54,10 @@ ul {
     margin-top: 10px;
 }
 
+
+
+/* Main */
+
 main {
     background-color: rosybrown;
     max-height: 85vh;
@@ -78,6 +82,7 @@ main {
     font-size: 1.13rem;
 }
 
+
 #input__text:focus {
     border: 2px solid var(--colorTwo);
 }
@@ -85,7 +90,7 @@ main {
     margin-top: 20px;
 }
 .btn {
-    background-color: var(--colorThree);
+    background-color: var(--colorTwo);
     border: none;
     text-decoration: none;
     color: white;
@@ -94,8 +99,6 @@ main {
     font-size: 16px;
     cursor: pointer;
 }
-
-
 .btn:hover {
     animation: flip-button 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both; 
     background-color: white;
@@ -114,3 +117,33 @@ main {
     }
 }
 
+/* Footer */
+footer{
+    background-color: var(--colorTwo);
+    height: 12.5vh;
+    color: var(--colorOne);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer__text>p>span{
+    font-weight: 700;
+}
+#footer__content>ul>li:first-child i{
+    text-decoration: underline;
+}
+
+/* Scrool bar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .30);
+    background-color: var(--colorOne);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--colorTwo);
+    border-radius: 5px;
+}
