@@ -100,7 +100,7 @@ main {
     cursor: pointer;
 }
 .btn:hover {
-    animation: flip-button 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both; 
+    animation: flip-button .7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both; 
     background-color: white;
     color: var(--colorThree);
 }
@@ -145,5 +145,4 @@ footer{
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--colorTwo);
-    border-radius: 5px;
 }
