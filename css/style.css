@@ -146,3 +146,40 @@ footer{
 ::-webkit-scrollbar-thumb{
     background-color: var(--colorTwo);
 }
+
+
+@media (max-width: 770px) {
+    h1{
+        font-size: 20px;
+    }
+    #input__text,#total__text {
+        font-size: .9rem;
+    }
+    .btn {
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .btn+ .btn{
+        margin-top: 10px;
+    }
+    main {
+        max-height: 100vh;
+    }
+    #footer__content,#footer__text > p,#nav__tag{
+        font-size: 13px;
+    }
+    .ul__item>a>img{
+        width: 25px;
+    }
+}
+@media (max-width: 370px) {
+    #footer__text > p,#footer__content{
+        width: 180px;
+    }
+}
+@media (max-width: 320px) {
+    .btn {
+        padding: 5px 20px;
+    }
+}
