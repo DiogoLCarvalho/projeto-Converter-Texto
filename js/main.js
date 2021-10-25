@@ -1,9 +1,11 @@
 const textarea = document.querySelector('#input__text');
+const carateres = document.querySelector('#totalCarater');
 
 // Ajustar automaticamente o texto
 textarea.addEventListener('input', function () {
     this.style.height = 'auto';
     this.style.height = `${this.scrollHeight}px`
+    carateres.innerHTML = + `${textarea.value.length}`;
 });
 
 // Botões
@@ -15,32 +17,21 @@ btns.forEach(element => {
         if (textarea.value == '') {
             alert('Seu texto está vazio, digite novamente:')
         } else {
-            console.log(this);
-            console.log(textarea.value);
-            console.log(containerBtn.children);
             let textoModificado;
-
-
             let acao = this.innerHTML;
-            console.log(acao);
 
             switch (acao) {
                 case 'Maiúscula':
-                    alert('Maiúscula');
                     textoModificado = textarea.value.toUpperCase();
                     textarea.value = ''
                     textarea.value = textoModificado;
                     break;
                 case 'Minúscula':
-                    alert('Minúscula');
                     textoModificado = textarea.value.toLowerCase();
                     textarea.value = ''
                     textarea.value = textoModificado;
                     break;
-
                 case 'Capitalizado':
-                    alert('Capitalizado');
-
                     // Transforme em array
                     textoModificado = textarea.value.split(' ');
 
@@ -53,15 +44,15 @@ btns.forEach(element => {
                     textarea.value = ''
                     textarea.value = textoModificado;
                     break;
-
                 case 'Copiar Texto':
-                    alert('Copiar Texto');
-                    
+                    textarea.select();
+                    document.execCommand("copy");
                     break;
-
                 case 'Limpar':
-                    alert('Limpar');
                     textarea.value = ''
+                    carateres.innerHTML = + `0`;
+                    textarea.style.height = 'auto';
+                    textarea.style.height = `${this.scrollHeight}px`
                     break;
                 default:
                     alert('Erro ao modificar o texto!')
