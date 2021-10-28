@@ -9,7 +9,7 @@ Cada vez que é digitado um caractere no input área, o height é igual ao taman
 
 ![as](https://user-images.githubusercontent.com/84794798/139291901-cd66d1e4-d53c-4812-900a-f0e81cc1da55.png)
 
-Ao clicar em cada um dos botões há uma ação. Primeiro tem uma verificação para averiguar se o input está vazio. Depois há um switch para a ação dos botões. Comandos para deixar em maiúsculo, minúsculo, copiar, limpar e deixar capitalizado. 
+Ao clicar em cada um dos botões há uma ação. Primeiro tem uma verificação para averiguar se o input está vazio. Depois há um switch para a ação dos botões. Comandos para deixar em maiúsculo, minúsculo, copiar, limpar e deixar capitalizado. <br>
 ![Captura de tela 2021-10-28 125526](https://user-images.githubusercontent.com/84794798/139292074-297c7f7b-791b-4604-8cd8-69b2a061b711.png)
 
 ### Detalhes a mencionar :exclamation:
