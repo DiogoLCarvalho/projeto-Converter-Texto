@@ -14,7 +14,7 @@ Ao clicar em cada um dos botões há uma ação. Primeiro tem uma verificação 
 
 ### Detalhes a mencionar :exclamation:
 
-Para deixar capitalizado, fiz com que o textoModificado se torna-se um array a cada quebra de espaço, depois com o charAt, a primeira letra fica em maiúsculo e adiciono o restante da string, isso a cada item do array. Ao final, o textoModificado vira uma string. 
+Para deixar capitalizado, fiz com que o textoModificado se tornasse um array a cada quebra de espaço, depois com o charAt, a primeira letra fica em maiúsculo e é adicionado o restante da string, isso a cada item do array. Ao final, o textoModificado vira uma string. 
 
 ![Captura de tela 2021-10-28 130228](https://user-images.githubusercontent.com/84794798/139293195-7d05d6ab-2f34-4f07-b706-aa320d2d098e.png)
 <br>
