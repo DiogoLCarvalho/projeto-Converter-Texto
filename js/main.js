@@ -5,7 +5,7 @@ const carateres = document.querySelector('#totalCarater');
 textarea.addEventListener('input', function () {
     this.style.height = 'auto';
     this.style.height = `${this.scrollHeight}px`
-    carateres.innerHTML = + `${textarea.value.length}`;
+    carateres.innerHTML = + `${textarea.value.trim().length}`;
 });
 
 // Botões

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 :root {
     --colorOne: #F4F1F2;
     --colorTwo: #7E3C55;
@@ -109,9 +110,11 @@ main {
     0% {
         transform: rotateX(0);
     }
+
     50% {
         transform: rotateX(180deg);
     }
+
     100% {
         transform: rotateX(360deg);
     }
@@ -156,11 +159,14 @@ footer {
     h1 {
         font-size: 20px;
     }
+
     #input__text {
         font-size: .9rem;
-        max-height: 100px;
-        min-height: 80px;
+        max-height: 150px;
+        min-height: 100px;
+        width: 80vw;
     }
+
     #input__text, #total__text {
         font-size: .9rem;
     }
@@ -169,18 +175,22 @@ footer {
         display: block;
         margin: 0 auto;
         font-size: 14px;
-        padding: 5px 20px;
+        padding: 10px 20px;
 
     }
+
     .btn+.btn {
         margin-top: 10px;
     }
+
     main {
         max-height: 100vh;
     }
+
     #footer__content, #footer__text>p, #nav__tag {
         font-size: 13px;
     }
+
     .ul__item>a>img {
         width: 25px;
     }
@@ -190,6 +200,7 @@ footer {
     #footer__text>p, #footer__content {
         width: 180px;
     }
+
     #footer__content, #footer__text>p, #nav__tag {
         font-size: 10px;
     }
